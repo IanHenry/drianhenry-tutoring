@@ -1,9 +1,22 @@
-$primary: #4b3f72;
-$accent: #f5b700;
-$bg-light: #fcfcfc;
-$text-dark: #1a1a1a;
+@use "sass:color";
 
-body { background-color: $bg-light; color: $text-dark; }
-a, .btn-primary { color: $accent; }
-h1, h2, h3 { color: $primary; }
+// Tutoring – helping students learn
+$primary: #006d77; // Deep teal
+$secondary: #83c5be; // Soft mint accent
+$bg-light: #f0f7f6;
+$text-color: #1f2d2a;
+$heading-color: #004d40;
+
+// Typography
+$font-body: 'Inter', sans-serif;
+$font-heading: 'Poppins', sans-serif;
+$font-mono: 'Source Code Pro', monospace;
+
+// Links
+a {
+  color: $primary;
+  &:hover {
+    color: color.scale($primary, $lightness: -10%);
+  }
+}
 
