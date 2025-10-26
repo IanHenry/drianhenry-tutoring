@@ -1,22 +1,10 @@
 @use "sass:color";
 
-// Tutoring – helping students learn
-$primary: #006d77; // Deep teal
-$secondary: #83c5be; // Soft mint accent
-$bg-light: #f0f7f6;
-$text-color: #1f2d2a;
-$heading-color: #004d40;
+// Primary & secondary colors
+$primary: #004d40;   // Deep teal
+$secondary: #26a69a; // Lively accent
 
-// Typography
-$font-body: 'Inter', sans-serif;
-$font-heading: 'Poppins', sans-serif;
-$font-mono: 'Source Code Pro', monospace;
-
-// Links
-a {
-  color: $primary;
-  &:hover {
-    color: color.scale($primary, $lightness: -10%);
-  }
-}
-
+// Background & text
+$bg-light: #e0f2f1;     // Soft light teal
+$text-color: #1b3a34;   // Dark teal for readability
+$heading-color: #00332e; // Strong heading color
