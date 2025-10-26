@@ -5,7 +5,7 @@ title: Tutoring
 # Tutoring & Mentoring
 
 <!-- Hero Section -->
-<div class="parallax" style="background-image: url('images/hero-tutoring.jpg');">
+<div class="parallax light-overlay" style="background-image: url('images/hero-tutoring.jpg'); --overlay-opacity: 0.4;">
  <div class="overlay">
   <h1>Level Up Your Skills</h1>
   <p>Personalized guidance in data & computational biology</p>
