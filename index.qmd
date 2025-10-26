@@ -6,10 +6,10 @@ title: Tutoring
 
 <!-- Hero Section -->
 <div class="parallax" style="background-image: url('images/hero-tutoring.jpg');">
-  <div class="overlay">
-    <h1>Level Up Your Skills</h1>
-    <p>Personalized guidance in data & computational biology</p>
-  </div>
+ <div class="overlay">
+  <h1>Level Up Your Skills</h1>
+  <p>Personalized guidance in data & computational biology</p>
+ </div>
 </div>
 
 <div class="service-card card">
