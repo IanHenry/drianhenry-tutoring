@@ -20,6 +20,6 @@ format:
   html:
     theme: cosmo
     css: 
-      - _theme/_base.scss
-      - _theme/colors.scss
+      - _theme/_base.css
+      - _theme/_colors.css
 
