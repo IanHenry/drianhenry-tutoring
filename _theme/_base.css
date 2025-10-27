@@ -72,6 +72,27 @@ a:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-grid .card {
+  flex: 1 1 100%;
+  min-width: 250px;
+}
+
+@media (min-width: 768px) {
+  .card-grid .card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+@media (min-width: 1200px) {
+  .card-grid .card {
+    flex: 1 1 calc(33.333% - 1rem);
+  }
+}
 /* Footer */
 .site-footer {
   padding: 1.5rem;
