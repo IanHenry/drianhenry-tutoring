@@ -4,14 +4,14 @@ format:
   html:
     css: _theme/_base.css
     scripts:
-      - https://cdn.jsdelivr.net/npm/lucide@0.259.0/dist/lucide.min.js
+      - https://cdn.jsdelivr.net/npm/lucide@0.548.0/dist/umd/lucide.min.js
 ---
 
 <!-- Hero Section -->
 <div class="parallax light-overlay" style="background-image: url('images/hero-tutoring.jpg'); --overlay-opacity: 0.35;">
   <div class="overlay">
-    <h1>Tutoring & Mentoring in Science and Data</h1>
-    <p>From A-Levels to Postgraduate Research – Build your skills and confidence</p>
+   <h1>Tutoring & Mentoring in Science and Data</h1>
+   <p>From A-Levels to Postgraduate Research – Build your skills and confidence</p>
   </div>
 </div>
 
