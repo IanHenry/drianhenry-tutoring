@@ -25,8 +25,6 @@ With a PhD in Computational Biology, an MBA, and over 15 years of experience tea
 
 I’ve taught on international PhD programmes, trained researchers through Software and Data Carpentry, and supported students from A-Level to postdoctoral level. My sessions combine academic rigour with practical insight from both academia and industry (AstraZeneca, EMBL, Institut Pasteur, VIB, ETH), helping learners understand not just what to study, but why it matters in real-world science.
 
-Whether you are preparing for **A-Levels**, working on **undergraduate or master’s projects**, or tackling **research-based projects at PhD or postdoctoral level**, I tailor sessions to your goals and skill level, combining academic rigour with practical problem-solving.
-
 </div>
 
 # 2. Subjects & Levels
