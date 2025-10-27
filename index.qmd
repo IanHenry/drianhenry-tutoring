@@ -1,40 +1,175 @@
 ---
-title: Tutoring
+title: Tutoring & Mentoring in Science and Data
 ---
 
-# Tutoring & Mentoring
-
 <!-- Hero Section -->
-<div class="parallax light-overlay" style="background-image: url('images/hero-tutoring.jpg'); --overlay-opacity: 0.4;">
- <div class="overlay">
-  <h1>Level Up Your Skills</h1>
-  <p>Personalized guidance in data & computational biology</p>
- </div>
+<div class="parallax light-overlay" style="background-image: url('images/hero-tutoring.jpg'); --overlay-opacity: 0.35;">
+  <div class="overlay">
+   <h1>Tutoring & Mentoring in Science and Data</h1>
+   <p>From A-Levels to Postgraduate Research – Build your skills and confidence</p>
+  </div>
 </div>
+
+---
+title: Tutoring & Mentoring in Science and Data
+---
+
+# 1. Overview
 
 <div class="service-card card">
-## What I Offer
-- One-on-one tutoring in Python, R, and statistical analysis
-- Mentoring for career development in data science and computational biology
-- Guidance on genomics and multi-omics data interpretation
+I offer personalised tutoring and academic mentoring for students in **biology, genetics, molecular sciences, and data-driven biology**.
+
+With a **PhD in Computational Biology**, an **MBA**, and over **15 years of teaching, mentoring, and research leadership**, I help learners:
+
+- Build strong foundations in molecular biology, genetics, and experimental sciences
+- Develop critical thinking, analytical, and problem-solving skills
+- Learn programming and data analysis for modern biology (Python, R, and bioinformatics workflows)
+- Prepare for university coursework, lab projects, and research assignments
+- Receive guidance on academic writing, dissertations, thesis projects, and career development
+
+I have taught **bioinformatics modules** on the Dresden International PhD program, am a **certified Software and Data Carpentry instructor**, and have supervised students from **undergraduates to postdocs**. My professional experience spans **Max Planck Institutes** and industry with **AstraZeneca**, giving students insight into both academic and real-world scientific contexts.
+
+Whether you are preparing for **A-Levels**, working on **undergraduate or master’s projects**, or tackling **research-based projects**, I tailor sessions to your goals and skill level, combining academic rigour with practical problem-solving.
 </div>
 
-<div class="service-card card">
-## Who This Is For
-- University students in biology, data science, or bioinformatics
-- Early-career researchers and scientists
-- Anyone looking to improve analytical and data skills
+# 2. Subjects & Levels
+
+<div class="card-grid">
+  <div class="service-card card">
+  ## A-Level Tutoring  
+  (Lucide: Layers)
+
+  **Subjects:** Biology, Chemistry, Physics, Computer Science, Applied Mathematics
+
+  - Focus on strong conceptual understanding and exam preparation
+  - Intro to computational thinking and data analysis
+  - Preparation for university entry in life sciences, computing, and medicine
+  </div>
+
+  <div class="service-card card">
+  ## Undergraduate & Master’s Support  
+  (Lucide: FlaskConical, Cpu)
+
+  **Subjects:** Molecular Biology, Genetics, Computational Biology, Bioinformatics
+
+  - Programming and data analysis in Python and R
+  - Experimental design, data interpretation, and statistical reasoning
+  - Guidance on academic writing, dissertations, and thesis projects
+  </div>
+
+  <div class="service-card card">
+  ## PhD & Postgraduate Mentoring  
+  (Lucide: Target, Compass)
+
+  **Focus Areas:** Structuring computational biology and data-intensive research, multi-omics analysis, reproducible workflows
+
+  - Supervision support, publication strategy, and project delivery
+  - Mentoring for academic and career planning
+  - Transition into industry or advanced research roles
+  </div>
 </div>
 
-<div class="service-card card">
-## How I Work
-- Tailored sessions based on skill level and goals
-- Hands-on projects and exercises
-- Continuous feedback and progress tracking
+# 3. Teaching Philosophy
+
+<div class="card-grid">
+  <div class="service-card card">
+  ## Personalized & Practical Approach  
+  (Lucide: Lightbulb, Compass)
+
+  - Each session is tailored to your goals and skill level
+  - Combines academic rigour with hands-on problem solving
+  - Encourages critical thinking and independent learning
+  </div>
+
+  <div class="service-card card">
+  ## Mentoring Across Levels  
+  (Lucide: Target)
+
+  - Support for A-Level students, undergraduates, and postgraduates
+  - Guidance on academic projects, dissertations, and research planning
+  - Mentorship for career development in science, data, and industry
+  </div>
+
+  <div class="service-card card">
+  ## Global & Interdisciplinary Experience  
+  (Lucide: Globe)
+
+  - Lived and worked abroad in Germany (Max Planck, industry collaborations)
+  - Led diverse international teams in academia and industry
+  - Applies cross-cultural insights to teaching, mentoring, and teamwork
+  </div>
 </div>
 
-<div class="service-card card">
-## Booking
-[Contact me](contact.qmd) to schedule a session or mentoring program
+# 4. How It Works
+
+<div class="card-grid">
+  <div class="service-card card">
+  ## One-to-One Sessions  
+  (Lucide: Settings)
+
+  - Online sessions via Zoom or Teams, tailored to your goals and skill level
+  - Personalized learning plans for A-Level, Undergraduate, or Postgraduate students
+  - Practical exercises in biology, genetics, computational biology, and data analysis
+  - Guidance for academic writing, dissertations, and project planning
+  </div>
+
+  <div class="service-card card">
+  ## Initial Consultation  
+  (Lucide: CalendarCheck2)
+
+  - Understand the learner’s background, objectives, and preferred learning style
+  - Set clear outcomes for each tutoring or mentoring session
+  - Plan a structured progression across topics, from core concepts to applied projects
+  </div>
+
+  <div class="service-card card">
+  ## Mentorship & Feedback  
+  (Lucide: MessageSquare)
+
+  - Continuous feedback on assignments, coding exercises, and research projects
+  - Mentoring on career pathways, graduate study, or transitioning into industry
+  - Drawing on experience supervising students up to Postdocs, leading diverse international teams, and working at Max Planck and AstraZeneca
+  </div>
+
+  <div class="service-card card">
+  ## Optional Career & Professional Guidance  
+  (Lucide: Target)
+
+  - Incorporates coaching elements for advanced learners, bridging academic and professional development
+  - Includes insight from MBA studies, leadership experience, and international project management
+  - Links to [Coaching →](https://coaching.drianhenry.co.uk) for full professional development programs
+  </div>
 </div>
 
+# 5. Get in Touch
+
+<div class="card-grid">
+  <div class="service-card card">
+  ## Arrange a Session  
+  (Lucide: Mail)
+
+  Ready to start your learning journey?  
+  Contact me to discuss your goals, schedule your first session, or arrange ongoing mentoring.
+
+  📧 Email: [tutoring@drianhenry.co.uk](mailto:tutoring@drianhenry.co.uk)  
+  🌐 Book online: [Contact Form →](contact.qmd)
+  </div>
+
+  <div class="service-card card">
+  ## Flexible Scheduling  
+  (Lucide: BookOpen)
+
+  - One-to-one sessions available on weekdays and weekends
+  - Zoom or Teams sessions tailored to your timezone
+  - Adaptable plans for intensive exam prep, research projects, or long-term skill development
+  </div>
+
+  <div class="service-card card">
+  ## Next Steps  
+  (Lucide: Compass)
+
+  - Initial consultation to identify learning objectives
+  - Customized session plan with clear milestones
+  - Ongoing feedback and progress tracking
+  </div>
+</div>

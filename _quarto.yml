@@ -24,5 +24,7 @@ format:
     css: 
       - _theme/_base.css
       - _theme/_colors.css
-    include-after-body: _includes/_footer.html
+    include-after-body: 
+      - _includes/_footer.html
+      - _includes/_lucide.html
 
