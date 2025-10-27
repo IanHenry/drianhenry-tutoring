@@ -1,49 +1,56 @@
-@use 'colors' as c;
 @use "sass:color";
+@use "colors" as c;
 
+// Fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora&family=Roboto+Mono&display=swap');
 
 $font-heading: 'Inter', sans-serif;
 $font-body: 'Lora', serif;
 $font-mono: 'Roboto Mono', monospace;
 
-/* Body & Typography */
+// Global body
 body {
   font-family: $font-body;
   line-height: 1.6;
   color: c.$text-color;
   background-color: c.$bg-light;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  margin: 0;
+  padding: 0;
 }
 
+// Headings
 h1, h2, h3, h4 {
   font-family: $font-heading;
   font-weight: 600;
   color: c.$heading-color;
 }
 
+// Code blocks
 code, pre {
   font-family: $font-mono;
+  background-color: color.scale(c.$bg-light, $lightness: -5%);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
 }
 
-/* Links */
+// Links
 a {
   color: c.$secondary;
+  text-decoration: none;
   &:hover {
     color: color.scale(c.$secondary, $lightness: -10%);
+    text-decoration: underline;
   }
 }
 
-/* Parallax Hero Sections */
+// Hero Parallax
 .parallax {
   position: relative;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   color: white;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +61,7 @@ a {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,var(--overlay-opacity,0.35));
+    background: rgba(0,0,0, var(--overlay-opacity, 0.35));
     z-index: 1;
   }
 
@@ -65,17 +72,22 @@ a {
     border-radius: 10px;
   }
 
-  &.light-overlay::before { background: rgba(255,255,255,var(--overlay-opacity,0.4)); }
-  &.dark-overlay::before { background: rgba(0,0,0,var(--overlay-opacity,0.4)); }
+  &.light-overlay::before {
+    background: rgba(255,255,255, var(--overlay-opacity, 0.4));
+  }
+
+  &.dark-overlay::before {
+    background: rgba(0,0,0, var(--overlay-opacity, 0.4));
+  }
 }
 
-/* Cards */
+// Card
 .card {
   border-radius: 12px;
   padding: 1.5rem;
   background-color: c.$bg-light;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
@@ -83,43 +95,54 @@ a {
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
-/* Card Grid */
+// Card grid
 .card-grid {
   display: grid;
-  gap: 1rem;
   grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  @media(min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media(min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .card-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media screen and (min-width: 1200px) {
-  .card-grid { grid-template-columns: repeat(3, 1fr); }
-}
-
-/* Footer */
+// Footer
 .site-footer {
-  padding: 1.5rem;
+  padding: 2rem 1rem;
   background-color: c.$bg-light;
   color: c.$text-color;
   text-align: center;
   font-size: 0.9rem;
   border-top: 1px solid color.scale(c.$text-color, $lightness: 80%);
+
   a {
     color: c.$secondary;
-    text-decoration: none;
     &:hover {
       color: color.scale(c.$secondary, $lightness: -10%);
       text-decoration: underline;
     }
   }
-  .footer-content { max-width: 960px; margin: 0 auto; }
+
+  .footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }
 
-/* Lucide Icons (optional spacing) */
-i[data-lucide] {
-  vertical-align: middle;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+// Page width (responsive container)
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  @media(max-width: 767px) {
+    padding: 0.5rem;
+  }
 }
