@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-  lucide.replace();
+  if (typeof lucide !== "undefined") {
+    lucide.replace();
+  } else {
+    console.error("Lucide not loaded");
+  }
 });
 

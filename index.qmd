@@ -4,8 +4,8 @@ format:
   html:
     css: _theme/_base.css
     scripts:
-      - https://cdn.jsdelivr.net/npm/lucide@0.548.0/dist/umd/lucide.min.js
-      - _theme/lucide-init.js
+      - https://cdn.jsdelivr.net/npm/lucide@0.548.0/dist/umd/lucide.js
+      - _theme/_lucide-init.js
 ---
 
 <!-- Hero Section -->
