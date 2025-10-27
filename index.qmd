@@ -1,18 +1,12 @@
 ---
-title: Tutoring & Mentoring in Science and Data
-format:
-  html:
-    css: _theme/_base.css
-    scripts:
-      - https://cdn.jsdelivr.net/npm/lucide@0.548.0/dist/umd/lucide.js
-      - _theme/_lucide-init.js
+title: Tutoring & Mentoring Portfolio
 ---
 
 <!-- Hero Section -->
 <div class="parallax light-overlay" style="background-image: url('images/hero-tutoring.jpg'); --overlay-opacity: 0.35;">
   <div class="overlay">
    <h1>Tutoring & Mentoring in Science and Data</h1>
-   <p>From A-Levels to Postgraduate Research – Build your skills and confidence</p>
+   <h3>From A-Levels to Postgraduate Research <br> Build your skills and confidence</h3>
   </div>
 </div>
 
@@ -20,7 +14,7 @@ format:
 
 <div class="service-card card">
 
-I offer personalised tutoring and academic mentoring for students in **biology, genetics, molecular sciences, and data-driven biology**.
+I offer personalised tutoring and academic mentoring for students in **biology, chemistry and physics** but specialising in **molecular biology, genetics, and computational biology**.
 
 With a **PhD in Computational Biology**, an **MBA**, and over **15 years of teaching, mentoring, and research leadership**, I help learners:
 
@@ -30,9 +24,9 @@ With a **PhD in Computational Biology**, an **MBA**, and over **15 years of teac
 - Prepare for university coursework, lab projects, and research assignments
 - Receive guidance on academic writing, dissertations, thesis projects, and career development
 
-I have taught **bioinformatics modules** on the Dresden International PhD program, am a **certified Software and Data Carpentry instructor**, and have supervised students from **undergraduates to postdocs**. My professional experience spans **Max Planck Institutes** and industry with **AstraZeneca**, giving students insight into both academic and real-world scientific contexts.
+I have taught **bioinformatics modules** on the Dresden International PhD program, am a **certified Software and Data Carpentry instructor**, and have supervised students from **undergraduates to postdocs**. My professional experience includes working at UK **Russell Group Universities (University of Edinburgh, University of Nottingham)**, spending over ten years at the **Max Planck Institute for Molecular Cell Biology and Genetics** leading computational research services, collaboraing with / consulting for **elite European Resarch Institutes (EMBL, VIB, Institut Pasteur, CRG & ETH)** and leading global teams in industry with **AstraZeneca**.  This breadth of experience enables me to give students insight into both academic and real-world scientific contexts.
 
-Whether you are preparing for **A-Levels**, working on **undergraduate or master’s projects**, or tackling **research-based projects**, I tailor sessions to your goals and skill level, combining academic rigour with practical problem-solving.
+Whether you are preparing for **A-Levels**, working on **undergraduate or master’s projects**, or tackling **research-based projects at PhD or postdoctoral level**, I tailor sessions to your goals and skill level, combining academic rigour with practical problem-solving.
 
 </div>
 
@@ -42,7 +36,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
 <div class="service-card card">
 
-### A-Level Tutoring <i data-lucide="layers"></i>
+### A-Level Tutoring {{< iconify lucide:layers >}}
 
 **Subjects:** Biology, Chemistry, Physics, Computer Science, Applied Mathematics
 
@@ -54,7 +48,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
 <div class="service-card card">
 
-### Undergraduate & Master’s Support <i data-lucide="cpu"></i> <i data-lucide="flask-conical"></i>
+### Undergraduate & Master’s Support {{< iconify lucide:cpu >}} {{< iconify lucide:flask-conical >}}
 
 **Subjects:** Molecular Biology, Genetics, Computational Biology, Bioinformatics
 
@@ -66,7 +60,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
 <div class="service-card card">
 
-### PhD & Postgraduate Mentoring <i data-lucide="target"></i> <i data-lucide="compass"></i>
+### PhD & Postgraduate Mentoring {{< iconify lucide:target >}} {{< iconify lucide:compass >}}
 
 **Focus Areas:** Structuring computational biology and data-intensive research, multi-omics analysis, reproducible workflows
 
@@ -84,7 +78,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
 <div class="service-card card">
 
-### Personalized & Practical Approach <i data-lucide="lightbulb"></i> <i data-lucide="compass"></i>
+### Personalized & Practical Approach {{< iconify lucide:lightbulb >}} {{< iconify lucide:compass >}}
 
 - Each session is tailored to your goals and skill level
 - Combines academic rigour with hands-on problem solving
@@ -94,7 +88,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
 <div class="service-card card">
 
-### Mentoring Across Levels <i data-lucide="target"></i>
+### Mentoring Across Levels {{< iconify lucide:target >}}
 
 - Support for A-Level students, undergraduates, and postgraduates
 - Guidance on academic projects, dissertations, and research planning
@@ -104,10 +98,11 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
 <div class="service-card card">
 
-### Global & Interdisciplinary Experience <i data-lucide="globe"></i>
+### Global & Interdisciplinary Experience {{< iconify lucide:globe >}}
 
-- Lived and worked abroad in Germany (Max Planck, industry collaborations)
+- Lived and worked abroad in Germany (Max Planck Institute for Molecular Cell Biology & Genetics)
 - Led diverse international teams in academia and industry
+- Managed global teams and cross-functional projects
 - Applies cross-cultural insights to teaching, mentoring, and teamwork
 
 </div>
@@ -120,7 +115,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
 <div class="service-card card">
 
-### One-to-One Sessions <i data-lucide="settings"></i>
+### One-to-One Sessions {{< iconify lucide:settings >}}
 
 - Online sessions via Zoom or Teams, tailored to your goals and skill level
 - Personalized learning plans for A-Level, Undergraduate, or Postgraduate students
@@ -131,7 +126,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
 <div class="service-card card">
 
-### Initial Consultation <i data-lucide="calendar-check-2"></i>
+### Initial Consultation {{< iconify lucide:calendar-check-2 >}}
 
 - Understand the learner’s background, objectives, and preferred learning style
 - Set clear outcomes for each tutoring or mentoring session
@@ -141,7 +136,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
 <div class="service-card card">
 
-### Mentorship & Feedback <i data-lucide="message-square"></i>
+### Mentorship & Feedback {{< iconify lucide:message-square >}}
 
 - Continuous feedback on assignments, coding exercises, and research projects
 - Mentoring on career pathways, graduate study, or transitioning into industry
@@ -151,7 +146,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
 <div class="service-card card">
 
-### Optional Career & Professional Guidance <i data-lucide="target"></i>
+### Optional Career & Professional Guidance {{< iconify lucide:target >}}
 
 - Incorporates coaching elements for advanced learners, bridging academic and professional development
 - Includes insight from MBA studies, leadership experience, and international project management
@@ -167,7 +162,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
 <div class="service-card card">
 
-### Arrange a Session <i data-lucide="mail"></i>
+### Arrange a Session {{< iconify lucide:mail >}}
 
 Ready to start your learning journey?  
 Contact me to discuss your goals, schedule your first session, or arrange ongoing mentoring.
@@ -179,7 +174,7 @@ Contact me to discuss your goals, schedule your first session, or arrange ongoin
 
 <div class="service-card card">
 
-### Flexible Scheduling <i data-lucide="book-open"></i>
+### Flexible Scheduling {{< iconify lucide:book-open >}}
 
 - One-to-one sessions available on weekdays and weekends
 - Zoom or Teams sessions tailored to your timezone
@@ -189,7 +184,7 @@ Contact me to discuss your goals, schedule your first session, or arrange ongoin
 
 <div class="service-card card">
 
-### Next Steps <i data-lucide="compass"></i>
+### Next Steps {{< iconify lucide:compass >}}
 
 - Initial consultation to identify learning objectives
 - Customized session plan with clear milestones
