@@ -7,11 +7,15 @@ $font-heading: 'Inter', sans-serif;
 $font-body: 'Lora', serif;
 $font-mono: 'Roboto Mono', monospace;
 
+/* Body & Typography */
 body {
   font-family: $font-body;
   line-height: 1.6;
   color: c.$text-color;
   background-color: c.$bg-light;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 h1, h2, h3, h4 {
@@ -39,19 +43,18 @@ a {
   background-size: cover;
   background-position: center;
   color: white;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   overflow: hidden;
 
-  // global overlay tint, adjustable per-page
   &::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, var(--overlay-opacity, 0.35)); // default 35% dark
+    background: rgba(0,0,0,var(--overlay-opacity,0.35));
     z-index: 1;
   }
 
@@ -62,13 +65,8 @@ a {
     border-radius: 10px;
   }
 
-  &.light-overlay::before {
-    background: rgba(255, 255, 255, var(--overlay-opacity, 0.4)); // brightens image
-  }
-
-  &.dark-overlay::before {
-    background: rgba(0, 0, 0, var(--overlay-opacity, 0.4)); // darkens image
-  }
+  &.light-overlay::before { background: rgba(255,255,255,var(--overlay-opacity,0.4)); }
+  &.dark-overlay::before { background: rgba(0,0,0,var(--overlay-opacity,0.4)); }
 }
 
 /* Cards */
@@ -85,29 +83,20 @@ a {
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
+/* Card Grid */
 .card-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 1rem;
+  grid-template-columns: 1fr;
 }
 
-.card-grid .card {
-  flex: 1 1 100%; // full width on small screens
-  min-width: 250px;
+@media screen and (min-width: 768px) {
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (min-width: 768px) {
-  .card-grid .card {
-    flex: 1 1 calc(50% - 1rem); // 2 cards per row on medium+ screens
-  }
+@media screen and (min-width: 1200px) {
+  .card-grid { grid-template-columns: repeat(3, 1fr); }
 }
-
-@media (min-width: 1200px) {
-  .card-grid .card {
-    flex: 1 1 calc(33.333% - 1rem); // optional: 3 per row on large screens
-  }
-}
-
 
 /* Footer */
 .site-footer {
@@ -117,7 +106,6 @@ a {
   text-align: center;
   font-size: 0.9rem;
   border-top: 1px solid color.scale(c.$text-color, $lightness: 80%);
-
   a {
     color: c.$secondary;
     text-decoration: none;
@@ -126,9 +114,12 @@ a {
       text-decoration: underline;
     }
   }
+  .footer-content { max-width: 960px; margin: 0 auto; }
+}
 
-  .footer-content {
-    max-width: 960px;
-    margin: 0 auto;
-  }
+/* Lucide Icons (optional spacing) */
+i[data-lucide] {
+  vertical-align: middle;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }

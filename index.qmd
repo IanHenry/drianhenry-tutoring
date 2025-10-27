@@ -1,5 +1,10 @@
 ---
 title: Tutoring & Mentoring in Science and Data
+format:
+  html:
+    css: _theme/_base.css
+    scripts:
+      - https://unpkg.com/lucide@latest/dist/umd/lucide.js
 ---
 
 <!-- Hero Section -->
@@ -9,10 +14,6 @@ title: Tutoring & Mentoring in Science and Data
    <p>From A-Levels to Postgraduate Research – Build your skills and confidence</p>
   </div>
 </div>
-
----
-title: Tutoring & Mentoring in Science and Data
----
 
 # 1. Overview
 
@@ -37,7 +38,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 <div class="card-grid">
   <div class="service-card card">
   ## A-Level Tutoring  
-  (Lucide: Layers)
+  <i data-lucide="Layers"></i>
 
   **Subjects:** Biology, Chemistry, Physics, Computer Science, Applied Mathematics
 
@@ -48,7 +49,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
   <div class="service-card card">
   ## Undergraduate & Master’s Support  
-  (Lucide: FlaskConical, Cpu)
+  <i data-lucide="FlaskConical"></i> <i data-lucide="Cpu"></i>
 
   **Subjects:** Molecular Biology, Genetics, Computational Biology, Bioinformatics
 
@@ -59,7 +60,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
   <div class="service-card card">
   ## PhD & Postgraduate Mentoring  
-  (Lucide: Target, Compass)
+  <i data-lucide="Target"></i> <i data-lucide="Compass"></i>
 
   **Focus Areas:** Structuring computational biology and data-intensive research, multi-omics analysis, reproducible workflows
 
@@ -74,7 +75,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 <div class="card-grid">
   <div class="service-card card">
   ## Personalized & Practical Approach  
-  (Lucide: Lightbulb, Compass)
+  <i data-lucide="Lightbulb"></i> <i data-lucide="Compass"></i>
 
   - Each session is tailored to your goals and skill level
   - Combines academic rigour with hands-on problem solving
@@ -83,7 +84,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
   <div class="service-card card">
   ## Mentoring Across Levels  
-  (Lucide: Target)
+  <i data-lucide="Target"></i>
 
   - Support for A-Level students, undergraduates, and postgraduates
   - Guidance on academic projects, dissertations, and research planning
@@ -92,7 +93,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
   <div class="service-card card">
   ## Global & Interdisciplinary Experience  
-  (Lucide: Globe)
+  <i data-lucide="Globe"></i>
 
   - Lived and worked abroad in Germany (Max Planck, industry collaborations)
   - Led diverse international teams in academia and industry
@@ -105,7 +106,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 <div class="card-grid">
   <div class="service-card card">
   ## One-to-One Sessions  
-  (Lucide: Settings)
+  <i data-lucide="Settings"></i>
 
   - Online sessions via Zoom or Teams, tailored to your goals and skill level
   - Personalized learning plans for A-Level, Undergraduate, or Postgraduate students
@@ -115,7 +116,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
   <div class="service-card card">
   ## Initial Consultation  
-  (Lucide: CalendarCheck2)
+  <i data-lucide="CalendarCheck2"></i>
 
   - Understand the learner’s background, objectives, and preferred learning style
   - Set clear outcomes for each tutoring or mentoring session
@@ -124,7 +125,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
   <div class="service-card card">
   ## Mentorship & Feedback  
-  (Lucide: MessageSquare)
+  <i data-lucide="MessageSquare"></i>
 
   - Continuous feedback on assignments, coding exercises, and research projects
   - Mentoring on career pathways, graduate study, or transitioning into industry
@@ -133,7 +134,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
   <div class="service-card card">
   ## Optional Career & Professional Guidance  
-  (Lucide: Target)
+  <i data-lucide="Target"></i>
 
   - Incorporates coaching elements for advanced learners, bridging academic and professional development
   - Includes insight from MBA studies, leadership experience, and international project management
@@ -146,7 +147,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 <div class="card-grid">
   <div class="service-card card">
   ## Arrange a Session  
-  (Lucide: Mail)
+  <i data-lucide="Mail"></i>
 
   Ready to start your learning journey?  
   Contact me to discuss your goals, schedule your first session, or arrange ongoing mentoring.
@@ -157,7 +158,7 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
   <div class="service-card card">
   ## Flexible Scheduling  
-  (Lucide: BookOpen)
+  <i data-lucide="BookOpen"></i>
 
   - One-to-one sessions available on weekdays and weekends
   - Zoom or Teams sessions tailored to your timezone
@@ -166,10 +167,16 @@ Whether you are preparing for **A-Levels**, working on **undergraduate or master
 
   <div class="service-card card">
   ## Next Steps  
-  (Lucide: Compass)
+  <i data-lucide="Compass"></i>
 
   - Initial consultation to identify learning objectives
   - Customized session plan with clear milestones
   - Ongoing feedback and progress tracking
   </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  lucide.replace();
+});
+</script>
