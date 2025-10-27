@@ -3,7 +3,7 @@ name: Build and Deploy Quarto Site
 on:
   push:
     branches:
-      - main  # Trigger when pushing to main
+      - main
 
 jobs:
   build-deploy:
@@ -13,41 +13,74 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # --- Setup R with caching ---
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
 
-      - name: Install Quarto
+      - name: Cache R packages
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION') }}
+          restore-keys: |
+            ${{ runner.os }}-r-
+
+      # --- Install Quarto CLI (if not present) ---
+      - name: Install Quarto CLI
         run: |
-          wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.8.25/quarto-1.8.25-linux-amd64.deb
-          sudo dpkg -i quarto-1.8.25-linux-amd64.deb
+          if ! command -v quarto &> /dev/null; then
+            echo "Quarto not found. Installing..."
+            wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.8.25/quarto-1.8.25-linux-amd64.deb
+            sudo dpkg -i quarto-1.8.25-linux-amd64.deb
+          else
+            echo "Quarto already installed."
+          fi
+        shell: bash
 
+      # --- Install R dependencies only if missing ---
       - name: Install R dependencies
         run: |
-          R -e "install.packages(c('remotes'))"
-          # Add other R packages if needed
-      
+          R -e 'if (!requireNamespace("quarto", quietly = TRUE)) install.packages(c("remotes", "quarto"), repos = "https://cloud.r-project.org")'
+
+      # --- Add Quarto extension non-interactively ---
       - name: Add Quarto extension (non-interactive)
         run: |
           Rscript -e 'quarto::quarto_add_extension("mcanouil/quarto-iconify", no_prompt = TRUE)'
 
+      # --- Render Quarto project ---
       - name: Render Quarto project
         run: quarto render
 
+      # --- Dynamic CNAME for GitHub Pages ---
       - name: Add dynamic CNAME
         run: |
-          # Get repo name (e.g. "coaching", "consulting", "tutoring", "drianhenry-co-uk")
           REPO_NAME=$(basename "${GITHUB_REPOSITORY}")
 
-          # Set domain rules
-          if [ "$REPO_NAME" = "drianhenry-co-uk" ]; then
-            DOMAIN="drianhenry.co.uk"
-          else
-            DOMAIN="${REPO_NAME}.drianhenry.co.uk"
-          fi
+          case "$REPO_NAME" in
+            drianhenry-co-uk)
+              DOMAIN="drianhenry.co.uk"
+              ;;
+            drianhenry-tutoring)
+              DOMAIN="tutoring.drianhenry.co.uk"
+              ;;
+            drianhenry-consulting)
+              DOMAIN="consulting.drianhenry.co.uk"
+              ;;
+            drianhenry-coaching)
+              DOMAIN="coaching.drianhenry.co.uk"
+              ;;
+            *)
+              # fallback rule for any other repo
+              DOMAIN="${REPO_NAME}.drianhenry.co.uk"
+              ;;
+          esac
 
           echo "Using domain: $DOMAIN"
           echo "$DOMAIN" > _site/CNAME
 
+      # --- Deploy ---
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
