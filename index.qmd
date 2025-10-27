@@ -14,17 +14,16 @@ title: Tutoring & Mentoring Portfolio
 
 <div class="service-card card">
 
-I offer personalised tutoring and academic mentoring for students in **biology, chemistry and physics** but specialising in **molecular biology, genetics, and computational biology**.
+I offer personalised tutoring and academic mentoring in biology, chemistry, and physics — with a special focus on molecular biology, genetics, and computational biology.
 
-With a **PhD in Computational Biology**, an **MBA**, and over **15 years of teaching, mentoring, and research leadership**, I help learners:
+With a PhD in Computational Biology, an MBA, and over 15 years of experience teaching and mentoring at leading universities including the University of Edinburgh, the University of Nottingham, and the Max Planck Institute, I help students:
 
-- Build strong foundations in molecular biology, genetics, and experimental sciences
+- Build strong foundations in molecular and experimental sciences
 - Develop critical thinking, analytical, and problem-solving skills
-- Learn programming and data analysis for modern biology (Python, R, and computational biology workflows)
-- Prepare for university coursework, lab projects, and research assignments
-- Receive guidance on academic writing, dissertations, thesis projects, and career development
+- Learn programming and data analysis for modern biology (Python, R, bioinformatics)
+- Prepare for exams, coursework, and research projects with confidence
 
-I have taught **bioinformatics modules** on the Dresden International PhD program, am a **certified Software and Data Carpentry instructor**, and have supervised students from **undergraduates to postdocs**. My professional experience includes working at UK **Russell Group Universities (University of Edinburgh, University of Nottingham)**, spending over ten years at the **Max Planck Institute for Molecular Cell Biology and Genetics** leading computational research services, collaboraing with / consulting for **elite European Resarch Institutes (EMBL, VIB, Institut Pasteur, CRG & ETH)** and leading global teams in industry with **AstraZeneca**.  This breadth of experience enables me to give students insight into both academic and real-world scientific contexts.
+I’ve taught on international PhD programmes, trained researchers through Software and Data Carpentry, and supported students from A-Level to postdoctoral level. My sessions combine academic rigour with practical insight from both academia and industry (AstraZeneca, EMBL, Institut Pasteur, VIB, ETH), helping learners understand not just what to study, but why it matters in real-world science.
 
 Whether you are preparing for **A-Levels**, working on **undergraduate or master’s projects**, or tackling **research-based projects at PhD or postdoctoral level**, I tailor sessions to your goals and skill level, combining academic rigour with practical problem-solving.
 
