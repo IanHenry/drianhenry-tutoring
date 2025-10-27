@@ -18,7 +18,7 @@ I offer personalised tutoring and academic mentoring in biology, chemistry, and 
 
 With a PhD in Computational Biology, an MBA, and over 15 years of experience teaching and mentoring at leading universities including the University of Edinburgh, the University of Nottingham, and the Max Planck Institute for Molecular Cell Biology & Genetics (MPI-CBG), I help students:
 
-- Build strong foundations in molecular and experimental sciences
+- Build strong foundations in scientific and quantitative disciplines
 - Develop critical thinking, analytical, and problem-solving skills
 - Learn programming and data analysis for modern biology (Python, R, bioinformatics)
 - Prepare for exams, coursework, and research projects with confidence
