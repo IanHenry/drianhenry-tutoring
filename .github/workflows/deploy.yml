@@ -20,12 +20,15 @@ jobs:
         run: |
           wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.8.25/quarto-1.8.25-linux-amd64.deb
           sudo dpkg -i quarto-1.8.25-linux-amd64.deb
-          quarto add mcanouil/quarto-iconify
 
       - name: Install R dependencies
         run: |
           R -e "install.packages(c('remotes'))"
           # Add other R packages if needed
+      
+      - name: Add Quarto extension (non-interactive)
+        run: |
+          Rscript -e 'quarto::quarto_add_extension("mcanouil/quarto-iconify", no_prompt = TRUE)'
 
       - name: Render Quarto project
         run: quarto render
