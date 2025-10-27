@@ -5,6 +5,7 @@ format:
     css: _theme/_base.css
     scripts:
       - https://cdn.jsdelivr.net/npm/lucide@0.548.0/dist/umd/lucide.min.js
+	  - _theme/lucide-init.js
 ---
 
 <!-- Hero Section -->
@@ -197,9 +198,3 @@ Contact me to discuss your goals, schedule your first session, or arrange ongoin
 </div>
 
 </div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  lucide.replace();
-});
-</script>

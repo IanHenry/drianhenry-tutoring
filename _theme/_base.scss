@@ -49,7 +49,7 @@ a {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  color: white;
+  color: black;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -108,7 +108,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media(min-width: 1200px) {
+  @media(min-width: 2000px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -136,13 +136,17 @@ a {
   }
 }
 
-// Page width (responsive container)
-main {
-  max-width: 2000px;
+// Make the main page container wider on desktop
+.container {
+  max-width: 2000px; // or whatever width you want
   margin: 0 auto;
   padding: 1rem;
+}
 
-  @media(max-width: 767px) {
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
     padding: 0.5rem;
   }
 }
+

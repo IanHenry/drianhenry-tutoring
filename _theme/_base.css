@@ -35,7 +35,7 @@ a:hover {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  color: white;
+  color: black;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -89,7 +89,7 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 2000px) {
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -115,13 +115,15 @@ a:hover {
   margin: 0 auto;
 }
 
-main {
+.container {
   max-width: 2000px;
   margin: 0 auto;
   padding: 1rem;
 }
+
 @media (max-width: 767px) {
-  main {
+  .container {
+    max-width: 100%;
     padding: 0.5rem;
   }
 }
