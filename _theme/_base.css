@@ -87,9 +87,14 @@ a:hover {
   padding: 0 1rem;
 }
 
-/* Desktop layouts */
+/* Mobile fallback: single column */
+@media (max-width: 767px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Desktop: default 2-column layout */
 @media (min-width: 768px) {
-  /* Default 2-column layout */
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -97,7 +102,13 @@ a:hover {
   .card-grid > :nth-child(2n+1):last-child {
     grid-column: 1/-1;
   }
-  /* Special case: exactly 3 cards → 3 columns, no last-card full-width */
+  /* Ensure cards keep their background color */
+  .card-grid > .card {
+    background-color: #e0f2f1;
+  }
+  /* Special case: exactly 3 cards, wide screens → 3 columns */
+}
+@media (min-width: 768px) and (min-width: 1024px) {
   .card-grid:has(> .card:nth-child(3):last-child) {
     grid-template-columns: repeat(3, 1fr);
     /* Undo the last-child full-width rule */
@@ -105,15 +116,15 @@ a:hover {
   .card-grid:has(> .card:nth-child(3):last-child) > :nth-child(2n+1):last-child {
     grid-column: auto;
   }
-  /* Ensure cards retain their background color even with :has() */
-  .card-grid > .card {
-    background-color: #e0f2f1;
-  }
 }
-/* Mobile fallback: single column */
-@media (max-width: 767px) {
-  .card-grid {
-    grid-template-columns: 1fr;
+@media (min-width: 768px) {
+  /* Special case: exactly 4 cards → 2x2 grid, no full-width cards */
+  .card-grid:has(> .card:nth-child(4):last-child) {
+    grid-template-columns: repeat(2, 1fr);
+    /* Ensure no full-width last card */
+  }
+  .card-grid:has(> .card:nth-child(4):last-child) > :nth-child(2n+1):last-child {
+    grid-column: auto;
   }
 }
 .site-footer {
