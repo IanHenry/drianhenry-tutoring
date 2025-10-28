@@ -1,5 +1,13 @@
 ---
-title: Tutoring & Mentoring Portfolio
+title: "Biology & Data Science Tutoring – Dr Ian Henry"
+description: "Personalised tutoring and mentoring from A-Level to postgraduate research in biology, computational biology, and data analysis."
+author: "Dr Ian Henry"
+keywords: ["tutoring", "mentoring", "computational biology tutor", "bioinformatics tutor", "A-Level biology", "postgraduate research"]
+canonical: "https://tutoring.drianhenry.co.uk/"
+og-title: "Biology & Data Science Tutoring – Dr Ian Henry"
+og-description: "Build skills and confidence with one-to-one tutoring in biology, chemistry, physics, and computational biology."
+og-image: "images/hero-tutoring.jpg"
+twitter-card: "summary_large_image"
 ---
 
 <!-- Hero Section -->
