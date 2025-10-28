@@ -6,7 +6,7 @@ project:
 
 website:
   title: "Tutoring – Dr Ian Henry"
-  site-url: "https://drianhenry.co.uk"
+  site-url: "https://tutoring.drianhenry.co.uk"
   navbar:
     left:
       - text: Home
