@@ -15,8 +15,8 @@ website:
       - text: Contact
         href: contact.qmd
     right:
-      - text: Main Hub
-        href: https://drianhenry.co.uk
+      - href: https://drianhenry.co.uk
+        text: '<img src="images/main_logo.png" alt="Main Hub" class="nav-logo">'
 
 format:
   html:

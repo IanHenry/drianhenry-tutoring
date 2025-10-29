@@ -210,3 +210,16 @@ div.author {
 }
 
 
+.navbar .nav-logo {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  border-radius: 0px;
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar .nav-logo:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
