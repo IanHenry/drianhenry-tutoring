@@ -5,7 +5,15 @@ title: Contact Tutoring
 # Contact Me
 
 Interested in tutoring or mentoring? Reach out:
-
+<div style="text-align:left; margin:2rem 0;">
+  <button 
+    class="btn btn-primary btn-lg"
+    data-cal-link="drianhenry/tutoring-intro-session"
+    data-cal-namespace="tutoring-intro-session"
+    data-cal-config='{"layout":"month_view"}'>
+    Book a Free Intro Session
+  </button>
+</div>
 **Email:** tutoring@drianhenry.co.uk  
 **LinkedIn:** [Dr Ian Henry](https://www.linkedin.com/in/ian-henry-a0348515/)
 
