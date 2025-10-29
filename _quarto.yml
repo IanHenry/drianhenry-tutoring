@@ -16,7 +16,7 @@ website:
         href: contact.qmd
     right:
       - href: https://drianhenry.co.uk
-        text: '<img src="images/main_logo.png" alt="Main Hub" class="nav-logo">'
+        text: Main
 
 format:
   html:
@@ -35,3 +35,4 @@ format:
     include-after-body: 
       - _includes/_footer.html
       - _includes/_cookie-consent.html
+      - _includes/_navbar-logo.html

@@ -179,18 +179,20 @@ div.author {
   display: none !important;
 }
 
-.navbar .nav-logo {
+/* Logo in desktop navbar only */
+.navbar-desktop-logo {
+  display: inline-block;
   height: 40px;
   width: auto;
   vertical-align: middle;
-  border-radius: 0px;
-  margin-left: 0.5rem;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  margin-right: 0rem;
 }
 
-.navbar .nav-logo:hover {
-  transform: scale(1.05);
-  opacity: 0.85;
+/* Hide logo in mobile dropdown menu */
+@media (max-width: 1000px) {
+  .navbar-desktop-logo {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=_base.css.map */
