@@ -152,7 +152,10 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="contact-me" class="level1">
 <h1>Contact Me</h1>
-<p>Interested in tutoring or mentoring? Reach out:</p>
+Interested in tutoring or mentoring? Reach out:
+<div style="text-align:left; margin:2rem 0;">
+<p><button class="btn btn-primary btn-lg" data-cal-link="drianhenry/tutoring-intro-session" data-cal-namespace="tutoring-intro-session" data-cal-config="{&quot;layout&quot;:&quot;month_view&quot;}"> Book a Free Intro Session </button></p>
+</div>
 <p><strong>Email:</strong> tutoring@drianhenry.co.uk<br>
 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ian-henry-a0348515/">Dr Ian Henry</a></p>
 
@@ -169,7 +172,92 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </div>
 
+<!-- Cal element-click embed code -->
+<script type="text/javascript">
+(function (C, A, L) {
+  let p = function (a, ar) { a.q.push(ar); };
+  let d = C.document;
+  C.Cal = C.Cal || function () {
+    let cal = C.Cal;
+    let ar = arguments;
+    if (!cal.loaded) {
+      cal.ns = {};
+      cal.q = cal.q || [];
+      d.head.appendChild(d.createElement("script")).src = A;
+      cal.loaded = true;
+    }
+    if (ar[0] === L) {
+      const api = function () { p(api, arguments); };
+      const namespace = ar[1];
+      api.q = api.q || [];
+      if (typeof namespace === "string") {
+        cal.ns[namespace] = cal.ns[namespace] || api;
+        p(cal.ns[namespace], ar);
+        p(cal, ["initNamespace", namespace]);
+      } else p(cal, ar);
+      return;
+    }
+    p(cal, ar);
+  };
+})(window, "https://app.cal.com/embed/embed.js", "init");
 
+Cal("init", "tutoring-intro-session", { origin: "https://app.cal.com" });
+Cal.ns["tutoring-intro-session"]("ui", {
+  hideEventTypeDetails: false,
+  layout: "month_view"
+});
+</script>
+<!-- End Cal element-click embed code -->
+
+
+<!-- Cal floating-popup embed code begins -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "tutoring-intro-session", {origin:"https://app.cal.com"});
+
+  Cal.ns["tutoring-intro-session"]("floatingButton", {"calLink":"drianhenry/tutoring-intro-session","config":{"layout":"month_view"},"buttonText":"Sign up for a free 30 min introductory session","buttonColor":"#1378de"}); 
+  Cal.ns["tutoring-intro-session"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
+  <!-- Cal floating-popup embed code ends -->
+
+<script>
+  function adjustCalButton() {
+    const calButton = document.querySelector('cal-floating-button');
+    const cookieBanner = document.getElementById('cookie-banner');
+
+    if (calButton && calButton.shadowRoot) {
+      const btn = calButton.shadowRoot.querySelector('button');
+      if (!btn) return;
+
+      // Determine offset
+      let bottomOffset = 20; // default bottom spacing
+      if (cookieBanner && cookieBanner.style.display !== 'none') {
+        bottomOffset += cookieBanner.offsetHeight + 10; // extra 10px gap
+      }
+
+      btn.style.bottom = bottomOffset + 'px';
+      btn.style.right = '20px'; // keep it in bottom-right
+    }
+  }
+
+  // Initial adjustment
+  window.addEventListener('load', () => {
+    adjustCalButton();
+
+    // Watch for clicks on cookie banner accept button
+    const acceptBtn = document.getElementById('accept-cookies');
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', () => {
+        setTimeout(adjustCalButton, 300); // give time for banner to hide
+      });
+    }
+
+    // Also adjust periodically in case Cal loads slowly
+    setTimeout(adjustCalButton, 1000);
+    setTimeout(adjustCalButton, 2000);
+    setTimeout(adjustCalButton, 3000);
+  });
+</script>
 <!-- Cookie / Privacy Banner -->
 <div id="cookie-banner" style="position: fixed; bottom: 0; left:0; width:100%; background:#222; color:#fff; padding:1rem; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; z-index:9999;">
   <div style="flex:1; min-width:250px;">
